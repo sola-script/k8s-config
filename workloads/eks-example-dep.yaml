@@ -9,7 +9,7 @@ metadata:
     # Container Image Automated Updates
     flux.weave.works/automated: "False" //*TO-DO*
 spec:
-  replicas: 3 //*To-DO*
+  replicas: 3 // updated
   selector:
     matchLabels:
       app: eks-example
