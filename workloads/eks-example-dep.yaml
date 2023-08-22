@@ -21,17 +21,17 @@ spec:
       - name: eks-example
         image: 333379007428.dkr.ecr.us-east-1.amazonaws.com/eks-example:e67716e1
         imagePullPolicy: IfNotPresent
-                resources:
-          requests: 
-            memory: "32Mi"
-            cpu: "100m" 
-          limits:
+        resources:
+            requests: 
+                memory: "32Mi"
+                cpu: "100m" 
+        limits:
             memory: "64Mi"
             cpu: "400m"
         ports:
         - containerPort: 80
           name: http
-          protocol: TCP
+          protocol: TCP 
         livenessProbe:
           httpGet:
             path: /
