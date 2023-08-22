@@ -7,9 +7,9 @@ metadata:
     app: eks-example
   annotations:
     # Container Image Automated Updates
-    flux.weave.works/automated: "False" //*TO-DO*
+    flux.weave.works/automated: "False" 
 spec:
-  replicas: 3 // updated
+  replicas: 3
   selector:
     matchLabels:
       app: eks-example
@@ -24,8 +24,8 @@ spec:
         imagePullPolicy: IfNotPresent
                 resources:
           requests: 
-            memory: "32Mi" //*TO-DO*
-            cpu: "100m" //*TO-DO*
+            memory: "32Mi"
+            cpu: "100m" 
           limits:
             memory: "64Mi"
             cpu: "400m"
