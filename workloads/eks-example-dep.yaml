@@ -19,11 +19,8 @@ spec:
     spec:
       containers:
       - name: eks-example
-        image: 333379007428.dkr.ecr.us-east-1.amazonaws.com/eks-example:e67716e1
+        image: 333379007428.dkr.ecr.us-east-1.amazonaws.com/eks-example@sha256:1d89b5d9cab18f1e00ec632ed860416cb1af591a9967111059fcaf34544bd7bb
         imagePullPolicy: IfNotPresent
-        limits:
-            memory: "64Mi"
-            cpu: "400m"
         ports:
         - containerPort: 80
           name: http
